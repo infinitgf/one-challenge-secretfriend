@@ -7,14 +7,10 @@ function agregarAmigo(){
     if(elem == ""){
         alert("Por favor, inserte un nombre.")
     } else {
-
-        amigos.push(elem);
-        console.log(amigos);
+        amigos.push(elem);    
     }
+    
+    elem = document.getElementById("amigo").value="";
 
-    console.log(elem);
-
-    return amigos;
+    return document.getElementById('listaAmigos').textContent = amigos;
 }
-
-console.log(amigos.length);
